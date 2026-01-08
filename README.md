@@ -1,73 +1,62 @@
-# Assignment 1 – Introduce Yourself
+# Assignment 1 – Introduce Yourself + Practicum Availability
 
-Welcome to your first assignment!  
-This is a chance for us to get to know you a bit — and for you to get comfortable with GitHub Classroom and Codespaces.
+Welcome to your first assignment.
+This is a quick way for us to get to know you and to make sure you are comfortable with GitHub Classroom and Codespaces.
 
 ---
 
 ## ✅ What You Need to Do
 
-1. **Open this repo in Codespaces**  
-   Click **Code → Codespaces → Create codespace** to launch your cloud-based workspace. You don’t need to install anything.
+### 1) Open this repo in Codespaces
+Click **Code → Codespaces → Create codespace** to launch your cloud-based workspace.
+You don’t need to install anything locally.
 
-2. **Create your profile**  
-   In the root of this repository, create a file named:
+### 2) Fill in your `profile.json`
+A `profile.json` file is already provided in the root folder of this repository.
 
-```
+Open it and **edit only the following fields**:
+- `name`
+- `student_id`
+- `hobbies`
+- `photo`
+- `practicum_availability` (mark `true` or `false` for each date)
 
-profile.json
-
-````
-
-Your file should follow this format:
+Example format:
 
 ```json
 {
   "name": "Jordan Smith",
   "student_id": "FSU20261234",
   "hobbies": ["surfing", "video games", "hiking"],
-  "expectation": "I want to understand how operating systems really work!",
-  "bio": "I'm a sophomore from Tallahassee who loves sunsets and building things.",
-  "photo": "photo.jpg"
+  "photo": "photo.jpg",
+  "practicum_availability": {
+    "2026-01-20 (Tue)": true,
+    "2026-01-22 (Thu)": false
+  }
 }
-````
+```
 
-* `hobbies` should be a list of at least one item.
-* `bio` should be one or two complete sentences.
-* `photo` is the file name of the image you’ll upload (see next step).
+### 3) Upload a photo
+Upload one photo to the **root folder** of this repo.
 
-3. **Add a photo**
-   Upload a headshot or casual photo of yourself to the root folder of this repo. Name it something simple like `photo.jpg`.
-   This will not be made public — it stays in your private repository.
-
-4. **Test your file**
-   In the terminal (inside Codespaces), run:
-
-   ```
-   pytest
-   ```
-
-   If the JSON is valid and passes the schema check, you'll see all tests pass ✅.
-
-5. **Submit your assignment**
-   Once you're done:
-
-   ```bash
-   git add .
-   git commit -m "Finished HW1"
-   git push
-   ```
-
----
-
-## 💡 Notes
-
-* Use **valid JSON syntax**: make sure to use double quotes, commas between items, and no trailing commas.
-* Write in **English**. This helps standardize and test your input.
-* This repo is private. Only the instructor and TAs can see your content.
-
----
-
-Let’s have a great semester together at FSU 😎
+- It can be a headshot or a casual life photo.
+- Pet photos are welcome too.
+- Any photo you think is “cool” is fine.
+- Name it something simple like `photo.jpg` (or `photo.png`).
+- Make sure the `photo` field in `profile.json` matches your file name.
 
 
+## ✅ Submission (Commit + Push)
+
+After you update `profile.json` and upload your photo, you must **commit and push** your changes.
+
+In Codespaces (VS Code in the browser):
+
+1. Click the **Source Control** icon on the left sidebar  
+   (it looks like a small branch with dots).
+2. You should see your changed files (e.g., `profile.json` and your photo).
+3. Type a short message like: `Assignment 1`
+4. Click **Commit**.
+5. Click **Push** (or **Sync Changes**) to upload your work to GitHub.
+
+If you only commit but do not push, we may not see your submission.
